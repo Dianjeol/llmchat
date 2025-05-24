@@ -1,0 +1,10 @@
+node_modules
+dist/
+build/
+*.AppImage
+*.deb
+*.rpm
+*.dmg
+*.exe
+.expo/
+build-resources/
