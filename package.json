@@ -44,13 +44,14 @@
     "productName": "LLM Chat",
     "directories": {
       "buildResources": "build-resources",
-      "output": "dist"
+      "output": "electron-dist"
     },
     "files": [
       "dist/**/*",
       "electron-main.js",
       "package.json",
-      "assets/**/*"
+      "assets/**/*",
+      "node_modules/**/*"
     ],
     "extraResources": [
       {
@@ -74,12 +75,7 @@
         }
       ],
       "category": "Utility",
-      "icon": "assets/icon.png",
-      "desktop": {
-        "Name": "LLM Chat",
-        "Comment": "AI Chat Application",
-        "Categories": "Utility;Office;"
-      }
+      "icon": "assets/icon.png"
     },
     "publish": {
       "provider": "github",
