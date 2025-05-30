@@ -2,7 +2,10 @@
   "name": "llmchat",
   "version": "1.0.0",
   "description": "LLM Chat Application",
-  "author": "dianjeol",
+  "author": {
+    "name": "dianjeol",
+    "email": "dianjeol@users.noreply.github.com"
+  },
   "license": "0BSD",
   "main": "electron-main.js",
   "homepage": "./",
