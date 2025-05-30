@@ -6,6 +6,11 @@ on:
       - 'v*'
   workflow_dispatch:
 
+# Add permissions for the workflow
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   build-linux:
     runs-on: ubuntu-latest
@@ -28,8 +33,9 @@ jobs:
     - name: Check build output
       run: ls -la dist/
     
-    - name: Build Linux AppImage
-      run: npm run build-appimage
+    # Build without automatic publishing
+    - name: Build Linux packages
+      run: npm run build-electron
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
